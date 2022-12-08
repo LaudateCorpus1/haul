@@ -679,14 +679,14 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@react-slate/components@^0.2.0":
+"@react-slate/components@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@react-slate/components/-/components-0.2.0.tgz#c101a76968c4325d37c02fedf851c6f34e097be0"
   dependencies:
     cli-spinners "^1.3.1"
     shallowequal "^1.0.2"
 
-"@react-slate/core@^0.7.0":
+"@react-slate/core@0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@react-slate/core/-/core-0.7.0.tgz#ebc3c62375ac93ba50e1655f1abf10787afd7cde"
   dependencies:
@@ -703,7 +703,7 @@
     react-reconciler "0.3.0-beta.1"
     strip-ansi "^4.0.0"
 
-"@react-slate/utils@^0.2.2":
+"@react-slate/utils@0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@react-slate/utils/-/utils-0.2.2.tgz#5b6931cb03f0c7dc16484f0ec6979fe8471ae7bd"
   dependencies:
@@ -1992,6 +1992,15 @@ cache-base@^1.0.1:
     union-value "^1.0.0"
     unset-value "^1.0.0"
 
+cache-loader@^1.2.2:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/cache-loader/-/cache-loader-1.2.5.tgz#9ab15b0ae5f546f376083a695fc1a75f546cb266"
+  dependencies:
+    loader-utils "^1.1.0"
+    mkdirp "^0.5.1"
+    neo-async "^2.5.0"
+    schema-utils "^0.4.2"
+
 callsites@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/callsites/-/callsites-2.0.0.tgz#06eb84f00eea413da86affefacbffb36093b3c50"
@@ -2040,6 +2049,14 @@ chalk@1.1.3, chalk@^1.0.0, chalk@^1.1.1, chalk@^1.1.3:
     has-ansi "^2.0.0"
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
+
+chalk@2.3.x:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.3.2.tgz#250dc96b07491bfd601e648d66ddf5f60c7a5c65"
+  dependencies:
+    ansi-styles "^3.2.1"
+    escape-string-regexp "^1.0.5"
+    supports-color "^5.3.0"
 
 chalk@^2.0.0, chalk@^2.0.1:
   version "2.3.0"
@@ -2119,7 +2136,7 @@ clear@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/clear/-/clear-0.0.1.tgz#e5186e229d99448179c130311b6f9d30bff6b0ba"
 
-cli-cursor@^2.1.0:
+cli-cursor@^2.0.0, cli-cursor@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/cli-cursor/-/cli-cursor-2.1.0.tgz#b35dac376479facc3e94747d41d0d0f5238ffcb5"
   dependencies:
@@ -2475,8 +2492,8 @@ decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.2.0:
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
 
 dedent@^0.7.0:
   version "0.7.0"
@@ -2997,7 +3014,7 @@ fbjs@^0.8.16, fbjs@^0.8.9:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
 
-figures@^2.0.0:
+figures@2.0.x, figures@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/figures/-/figures-2.0.0.tgz#3ab1a2d2a62c8bfb431a0c94cb797a2fce27c962"
   dependencies:
@@ -3440,7 +3457,7 @@ hasha@^2.2.0:
     pinkie-promise "^2.0.0"
 
 haul@../..:
-  version "1.0.0-rc.7"
+  version "1.0.0-rc.10"
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-proposal-class-properties" "^7.0.0"
@@ -3450,11 +3467,12 @@ haul@../..:
     "@babel/polyfill" "^7.0.0"
     "@babel/preset-env" "^7.0.0"
     "@babel/register" "^7.0.0"
-    "@react-slate/components" "^0.2.0"
-    "@react-slate/core" "^0.7.0"
-    "@react-slate/utils" "^0.2.2"
+    "@react-slate/components" "0.2.0"
+    "@react-slate/core" "0.7.0"
+    "@react-slate/utils" "0.2.2"
     "@zamotany/react-proxy" "3.0.0-alpha.4"
     babel-loader "^8.0.2"
+    cache-loader "^1.2.2"
     camelcase-keys "^4.0.0"
     case-sensitive-paths-webpack-plugin "^2.1.2"
     chalk "1.1.3"
@@ -3489,9 +3507,10 @@ haul@../..:
     resolve-from "^4.0.0"
     rxjs "^5.4.2"
     semver "^5.5.0"
+    simple-progress-webpack-plugin "^1.1.2"
     source-map "^0.5.6"
     strip-ansi "^3.0.1"
-    thread-loader "^1.1.5"
+    thread-loader "^1.2.0"
     uglifyjs-webpack-plugin "^1.2.7"
     webpack "^4.12.0"
     webpack-hot-middleware "^2.22.1"
@@ -4608,6 +4627,14 @@ log-symbols@^1.0.2:
   resolved "https://registry.yarnpkg.com/log-symbols/-/log-symbols-1.0.2.tgz#376ff7b58ea3086a0f09facc74617eca501e1a18"
   dependencies:
     chalk "^1.0.0"
+
+log-update@2.3.x:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/log-update/-/log-update-2.3.0.tgz#88328fd7d1ce7938b29283746f0b1bc126b24708"
+  dependencies:
+    ansi-escapes "^3.0.0"
+    cli-cursor "^2.0.0"
+    wrap-ansi "^3.0.1"
 
 longest@^1.0.1:
   version "1.0.1"
@@ -6305,6 +6332,13 @@ schedule@^0.3.0:
   dependencies:
     object-assign "^4.1.1"
 
+schema-utils@^0.4.2:
+  version "0.4.7"
+  resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.4.7.tgz#ba74f597d2be2ea880131746ee17d0a093c68187"
+  dependencies:
+    ajv "^6.1.0"
+    ajv-keywords "^3.1.0"
+
 schema-utils@^0.4.4, schema-utils@^0.4.5:
   version "0.4.5"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.4.5.tgz#21836f0608aac17b78f9e3e24daff14a5ca13a3e"
@@ -6465,6 +6499,14 @@ simple-plist@^0.2.1:
     bplist-creator "0.0.7"
     bplist-parser "0.1.1"
     plist "2.0.1"
+
+simple-progress-webpack-plugin@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/simple-progress-webpack-plugin/-/simple-progress-webpack-plugin-1.1.2.tgz#eb366f6abd2e1f68cb8512762bbfcf3bce057d4b"
+  dependencies:
+    chalk "2.3.x"
+    figures "2.0.x"
+    log-update "2.3.x"
 
 slash@^1.0.0:
   version "1.0.0"
@@ -6819,7 +6861,7 @@ test-exclude@^4.1.1:
     read-pkg-up "^1.0.1"
     require-main-filename "^1.0.1"
 
-thread-loader@^1.1.5:
+thread-loader@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/thread-loader/-/thread-loader-1.2.0.tgz#35dedb23cf294afbbce6c45c1339b950ed17e7a4"
   dependencies:
@@ -7305,6 +7347,13 @@ wrap-ansi@^2.0.0:
   dependencies:
     string-width "^1.0.1"
     strip-ansi "^3.0.1"
+
+wrap-ansi@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-3.0.1.tgz#288a04d87eda5c286e060dfe8f135ce8d007f8ba"
+  dependencies:
+    string-width "^2.1.1"
+    strip-ansi "^4.0.0"
 
 wrappy@1:
   version "1.0.2"
